@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><label>ชื่อเต็ม/ชื่อย่อของสาขาวิชา:</label>
+    <select name="สาขาวิชา">
+        <option value="Computer Science / CS">Computer Science / CS</option>
+        <option value="BioTechnology / BT">BioTechnology / BT</option>
+        <option value="Applied Mathmatics / MA">Applied Mathmatics / MA</option>
+
+    </select></p>
+    จำนวนเงินโอน:
+    <input type="text" name="เงินโอน" pattern="\d"> บาท<br><hr>
+    อาหารที่ชื่อชอบ:<br>
+    อันดับ1:<input type="text" name="อาหาร1"><br>
+    อันดับ2:<input type="text" name="อาหาร2"><br>
+    อันดับ3:<input type="text" name="อาหาร3"><br>
+    อันดับ4:<input type="text" name="อาหาร4"><br>
+    อันดับ5:<input type="text" name="อาหาร5"><br>
+<br><hr>
+    ค่าไฟฟ้า 3 เดือนที่ผ่านมา:<input type="number" name="ค่าไฟ3เดือน" min="100"> บาท<br>
+    รหัสบัตรประชาชน:<input type="text" name="รหัสบัตรปชช" placeholder="x-xxxx-xxxxx-xx-x" pattern="\d{1}-\d{4}-\d{5}-\d{2}-\d{1}"><br>
+    <label>ความพึงพอใจของหนังสือเล่มนี้:
+        <input type="radio" name="ความพอใจต่อหนังสือ" value="มาก"/>มาก
+        <input type="radio" name="ความพอใจต่อหนังสือ" value="ปานกลาง"/>ปานกลาง
+        <input type="radio" name="ความพอใจต่อหนังสือ" value="น้อย"/>น้อย
+    </label><br>
+    <label>อาการป่วย:
+        <input type="checkbox" name="อาการป่วย" value="มีไข้">มีไข้
+        <input type="checkbox" name="อาการป่วย" value="ปวดหัว">ปวดหัว
+        <input type="checkbox" name="อาการป่วย" value="เจ็บคอ">เจ็บคอ
+        อื่นๆ<input type="text" name="อาการป่วย" placeholder="ระบุ">
+    </label><br>
+    <label>ในช่วง 3เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่:
+        <input type="radio" name="วัคซีน" value="เคย"/>เคย
+        <input type="radio" name="วัคซีน" value="ไม่เคย"/>ไม่เคย
+    </label><br>
+    รหัสผ่าน:<input type="password" name="รหัสผ่าน"><br><hr>
+    เวลาเริ่มเข้าเรียน:<input type="time" name="เวลาเข้าเรียน">
+    เวลาเลิกเรียน:<input type="time" name="เวลาเลอกเรียน"><br><hr>
+    วันเวลาที่ต้องไปพบแพทย์:<input type="datetime-local" name="วันเวลาที่ต้องไปพบแพทย์์">
+
+
+</body>
+</html>
